@@ -12,8 +12,8 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: 'guogang-it',
-      repo: '',
+      name: 'it-learning',
+      repo: 'https://github.com/guogang1984/it-learning.git',
       loadNavbar: true,
       loadSidebar: true,
       coverpage: true,
@@ -29,6 +29,7 @@
         '/.*/_sidebar.md': '/_sidebar.md',//防止意外回退
         '/.*/_navbar.md': '/_navbar.md'
       },
+      ga: 'UA-167862118-1',
       plugins: [
         function(hook) {
           var header = [
@@ -38,7 +39,7 @@
           var footer = [
             '<hr/>',
             '<footer style="text-align: center">',
-            '<span><a href="http://www.beian.miit.gov.cn/" target="_blank">ICP备XXXXXXXX号-1</a></span>',
+            '<span><a href="http://www.beian.miit.gov.cn/" target="_blank">鄂ICP备18013059号-1</a></span>',
             '</footer>'
           ].join('');
           hook.afterEach(function (html) {
